@@ -8,7 +8,7 @@ class Ui_MainWindow(object):
         self.gridArray = []
         MainWindow.setGeometry(300, 300, 800, 400)
         MainWindow.setWindowTitle("Graphical EQ")
-        MainWindow.setWindowIcon(QtGui.QIcon(".icon//Icon.png"))
+        MainWindow.setWindowIcon(QtGui.QIcon("img/Icon.png"))
         self.FRAME_A = QtWidgets.QFrame()
         self.FRAME_A.setStyleSheet("QWidget { background-color: %s }" % QtGui.QColor(0, 0, 5, 5).name())
         self.mainhbox = QtWidgets.QVBoxLayout()
@@ -37,9 +37,9 @@ class Ui_MainWindow(object):
         self.toolbar = QtWidgets.QToolBar(MainWindow)
         MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.toolbar)
 
-        self.playAction = QtWidgets.QAction(QtGui.QIcon(".img//fi.png"), 'play', MainWindow)
-        self.stopAction = QtWidgets.QAction(QtGui.QIcon(".img//images.png"), 'stop', MainWindow)
-        self.save = QtWidgets.QAction(QtGui.QIcon(".img//images.png"), 'save', MainWindow)
+        self.playAction = QtWidgets.QAction(QtGui.QIcon("img/fi.png"), 'play', MainWindow)
+        self.stopAction = QtWidgets.QAction(QtGui.QIcon("img/images.png"), 'stop', MainWindow)
+        self.save = QtWidgets.QAction(QtGui.QIcon("img/images.png"), 'save', MainWindow)
 
 
         self.toolbar.addAction(self.playAction)
